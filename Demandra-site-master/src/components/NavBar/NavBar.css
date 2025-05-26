@@ -1,0 +1,158 @@
+.navbar-container {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  height: auto;
+  width: 7.9rem;
+  margin-left: 2.7rem;
+}
+
+.language-dropdown {
+  position: relative;
+  margin-left: auto;
+  padding-right: 1.6rem;
+}
+
+.language-btn {
+  background-color: #7b439c;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  font-size: 1.3rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.language-btn:hover {
+  background-color: #533987;
+}
+
+.language-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  max-width: 6rem;
+  min-width: 1px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  z-index: 50;
+  padding: 0.7rem 0;
+  background-color: #ffffff;
+}
+
+.language-dropdown:hover .dropdown-menu,
+.language-dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  background-color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  margin: 0rem;
+  padding: 1rem;
+  width: 6rem;
+  align-items: center;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: #7b439c;
+
+
+}
+
+.contact {
+  padding-right: 2.7rem;
+}
+
+.contactButton {
+  background-color: #7b439c;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.3rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.contactButton:hover {
+  background-color: #5c4095;
+}
+
+.language-icon {
+  font-size: 1.4rem;
+  padding-right: 0.25rem;
+}
+
+.language-btn:focus .dropdown-menu,
+.language-btn:hover .dropdown-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .logo {
+    height: 4.2rem;
+    width: 81%;
+    margin-left: 0.4rem;
+
+  }
+
+  .contact {
+    padding-right: 1.7rem;
+  }
+
+  .contactButton {
+    background-color: #7b439c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.3rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+
+  .contactButton:hover {
+    background-color: #5c4095;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .navbar-container {}
+
+  .contactButton {
+    width: 90%;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,457 @@
+.bodyPrezentare {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    transition: background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+     margin-left: -0.5rem;
+     margin-right: -0.5rem;
+  padding: 0rem;
+}
+.Titlu {
+    max-width: 800rem;
+    font-size: 2.67rem;
+    font-weight: 700;
+    margin-bottom: 3.3rem;
+    margin-top: 7rem;
+    color: #253e92;
+    text-align: center;
+
+}
+.Paragraf1 {
+    font-size: 1.35rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    color: #40454b;
+    margin-bottom: 2.7rem;
+    font-weight: 550;
+}
+.GetStarted {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #7b439c;
+    background-color: transparent;
+    border: 0.2rem solid #7b439c;
+    padding: 0.55rem 0.7rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-bottom: 2.9rem;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.18);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+.GetStarted:hover {
+    color: #533987;
+    border: 0.2rem solid #533987;
+    text-decoration: none;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+    background-color: #ffffff;
+    margin-bottom: 23rem;
+}
+.nav-buttons button {
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 13px;
+    border: none;
+    color: #ffffff;
+    background-color: #7b439c;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.18);
+
+    background: linear-gradient(to top, #7b439c, #8458b1);
+    background-size: 200% 100%;
+
+}
+.nav-buttons button:hover {
+
+    color: #ffffff;
+
+
+    background: linear-gradient(to top, #533987, #533987);
+    background-size: 100% 200%;
+
+}
+.scroll-btn {
+    padding: 13px 0;
+    width: 150px;
+    margin: 0 0.5rem 0.5rem 0;
+    border: none;
+    color: #253e92;
+    background-color: #ffd273;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    outline: none;
+    display: inline-block;
+}
+.scroll-btn:hover {
+    background-color: #7b439c;
+    color: #ffd273;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.skew {
+    transform: skewY(-2.9deg);
+}
+.flex-container-T1-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 8rem;
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+    padding-right: 3rem;
+
+    background: linear-gradient(to bottom, #7b439c, #a377cf);
+    background-size: 100% 200%;
+    animation: gradientShift 4s ease-in-out infinite;
+}
+.flex-container-T1-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    transform: skewY(2.9deg);
+}
+.Titlu1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    margin-top: 0rem;
+    margin-left: 3rem;
+    font-size: 6.9rem;
+    font-weight: 500;
+    max-width: 4rem;
+    transform: skewY(2.9deg);
+}
+.flex-item-T1 {
+    display: flex;
+    flex-direction: row;
+    /* iconita in stanga, restul in dreapta */
+    align-items: flex-start;
+    background-color: #ffd273;
+    border-radius: 3rem;
+    font-size: 1.13rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1.6rem 1.2rem 0.6rem 0.8rem;
+    max-width: 60rem;
+    transform: skewY(2.9deg);
+    position: relative;
+    transition: box-shadow 0.3s, background 0.3s, min-height 0.3s;
+    min-height: 4.5rem;
+    overflow: visible;
+}
+.flex-item-T1 .icon {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    transform: skewY(2deg);
+    flex-shrink: 0;
+}
+.flex-item-T1-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.flex-item-T1-content p {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+.flex-item-T1 .arrow-btn {
+    background: none;
+    border: none;
+    color: #7b439c;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0.5rem 0 0 0;
+    transition: transform 0.3s;
+    align-self: center;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+.flex-item-T1 .arrow-btn.rotated {
+    transform: rotate(180deg);
+}
+.flex-item-T1 .extra-details {
+    width: 80%;
+    margin-bottom: 0rem;
+    background: #ffd273;
+    font-size: 1.12rem;
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    padding: 0 1.2rem;
+    transition: max-height 0.1s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s, padding 0.2s;
+}
+.flex-item-T1 .extra-details.show {
+    padding: 1rem 1.2rem;
+    max-height: 400px;
+    /* crește pentru a evita blocajul la retractare */
+    opacity: 1;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s, padding 0.2s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.StrongPoints {
+    font-size: 4.67rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #253e92;
+    text-align: center;
+}
+
+.flex-container-SP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.9rem;
+    
+    
+    max-width: 60rem;
+}
+
+.flex-item-SP {
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    width: 11.7em;
+    height: 13rem;
+    padding: 1rem;
+    margin-bottom: 0.9rem;
+    color: #ffd273;
+    border-radius: 1.1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 9px 13px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
+    background: linear-gradient(to top, #7b439c, #986ac6);
+    background-size: 200% 100%;
+    animation: gradientShift 4s ease-in-out infinite;
+
+}
+
+.flex-item-SP:hover {
+    background-color: #5c4095;
+    box-shadow: 0px 13px 17px rgba(0, 0, 0, 0.4);
+}
+
+.flex-item-SP .icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #ffd273;
+}
+
+.Technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0rem;
+    margin-bottom: 4.5rem;
+
+}
+
+.Technology .title {
+    max-width: 700rem;
+    font-size: 2.67rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+
+    color: #253e92;
+    text-align: center;
+}
+
+.Technology .text {
+    font-size: 1.24rem;
+    margin: 2rem auto;
+    max-width: 830px;
+    color: #40454b;
+    margin-bottom: 2.7rem;
+    font-weight: 550;
+}
+
+.flex-container-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.counter {
+    width: 32rem;
+    height: 27rem;
+    font-size: 2.9rem;
+    color: #ffffff;
+    line-height: 3.6rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to bottom, #7b439c, #a377cf);
+
+    background-size: 100% 200%;
+    animation: gradientShift 4s ease-in-out infinite;
+}
+
+.counter-counter {
+    font-size: 7.9rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+.chart-container {
+    background-color: #ffffff;
+
+
+}
+
+.AboutUs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    margin-bottom: -0.5rem;
+    padding-right: 6rem;
+
+}
+
+.AboutUs .title {
+    background-image: url('/AboutUsBk.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 3.4rem;
+    font-weight: 700;
+    background-size: 27rem 23rem;
+    padding: 9.4rem;
+    padding-right: 9.4rem;
+    color: #ffffff;
+
+}
+
+.AboutUs .text {
+    font-size: 1.47rem;
+    font-weight: 500;
+    color: 40454b;
+    max-width: 43rem;
+
+}
+
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+    margin: 0 auto 7rem auto;
+    gap: 8rem;
+    max-width: 55rem;
+}
+
+.Kaufland {
+    height: 9.5rem;
+    margin-top: -0.8rem;
+}
+
+.Auchan {
+    height: 8rem;
+}
+
+.Penny {
+    height: 8rem;
+}
+
+/* Imagine decor dreapta susțin lângă Titlu */
+.decor1-img {
+    position: absolute;
+    right: -0rem;
+    width: clamp(6rem, 30vw, 36rem);
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.decor2-img {
+    position: absolute;
+    left: 0rem;
+    top: 5rem;
+    width: clamp(6rem, 30vw,36rem);
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+.space-between {
+    display: flex;
+  justify-content: space-between;
+
+}
+
+.decor3-img {
+  position:relative;
+  top: -8.3rem;
+ width: clamp(13rem, 25vw, 34rem);
+   
+  z-index: 0;
+  
+  pointer-events: none;
+  user-select: none;
+}
+
+.decor4-img {
+  position:relative;
+  margin-right: 6vw;
+  top: -3.3rem;
+  width: clamp(9rem, 19vw, 34rem);
+margin-bottom: -2rem;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}

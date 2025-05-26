@@ -1,0 +1,69 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: -2rem;
+    background: linear-gradient(to top, #7b439c, #9864cc);
+    background-size: 200% 100%;
+    animation: gradientShift 4s ease-in-out infinite;
+}
+
+.header {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-link {
+    color: #dbdbdb;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    padding-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 3rem
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2.3rem
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem
+}
+
+.footer-social-icon {
+    color: #dbdbdb;
+    width: auto;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.footer-social-icon:hover {
+    text-decoration: underline;
+}

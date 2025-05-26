@@ -1,0 +1,40 @@
+.bodyContact {
+    padding-left: 2rem;
+    background-color: #ffffff;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex: 1;
+}
+
+.textContainer {
+    margin-left: 10rem;
+}
+
+.titleContact {
+    max-width: 800rem;
+    font-size: 2.67rem;
+    font-weight: 700;
+    color: #253e92;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+    margin-left: 0.7rem;
+
+}
+
+.infoContainer {
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    width: 15.7em;
+    height: 22rem;
+    padding: 3rem;
+    color: #001761;
+    border-radius: 0.9rem;
+    border: 0.3rem solid #7b439c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    margin-left: 0.5rem;
+
+
+}
