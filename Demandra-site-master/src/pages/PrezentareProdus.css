@@ -1,21 +1,30 @@
 .bodyPrezentare {
-    padding: 4rem 2rem;
+    padding: 6rem 2rem 4rem 2rem; /* increased top padding */
     background-color: #ffffff;
     text-align: center;
     transition: background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
     overflow-x: hidden;
-     margin-left: -0.5rem;
-     margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
   padding: 0rem;
 }
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .Titlu {
-    max-width: 800rem;
+ 
+    max-width: 60rem;
     font-size: 2.67rem;
     font-weight: 700;
-    margin-bottom: 3.3rem;
-    margin-top: 7rem;
+    margin-bottom: 2rem;
+    margin-top: 12rem; 
     color: #253e92;
     text-align: center;
 
@@ -23,7 +32,7 @@
 .Paragraf1 {
     font-size: 1.35rem;
     margin: 2rem auto;
-    max-width: 800px;
+    max-width: 44rem;
     color: #40454b;
     margin-bottom: 2.7rem;
     font-weight: 550;
@@ -58,7 +67,7 @@
     margin-bottom: 3rem;
     padding: 0 2rem;
     background-color: #ffffff;
-    margin-bottom: 23rem;
+    margin-bottom: 20rem;
 }
 .nav-buttons button {
     font-size: 1.05rem;
@@ -120,7 +129,7 @@
     gap: 10rem;
     padding-top: 5rem;
     padding-bottom: 2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 13rem;
     margin-left: -2.5rem;
     margin-right: -2.5rem;
     padding-right: 3rem;
@@ -143,7 +152,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #ffffff;
     margin-top: 0rem;
-    margin-left: 3rem;
+    margin-left: 6rem;
     font-size: 6.9rem;
     font-weight: 500;
     max-width: 4rem;
@@ -152,7 +161,7 @@
 .flex-item-T1 {
     display: flex;
     flex-direction: row;
-    /* iconita in stanga, restul in dreapta */
+    margin-right: 2.5rem;
     align-items: flex-start;
     background-color: #ffd273;
     border-radius: 3rem;
@@ -249,9 +258,8 @@
     justify-content: center;
     align-items: center;
     gap: 2.9rem;
-    
-    
     max-width: 60rem;
+    
 }
 
 .flex-item-SP {
@@ -293,12 +301,12 @@
     flex-direction: column;
     justify-content: center;
     gap: 0rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: -8rem;
 
 }
 
 .Technology .title {
-    max-width: 700rem;
+    max-width: 60vw;
     font-size: 2.67rem;
     font-weight: 700;
     margin-bottom: 3rem;
@@ -310,7 +318,7 @@
 .Technology .text {
     font-size: 1.24rem;
     margin: 2rem auto;
-    max-width: 830px;
+     max-width: 44rem;
     color: #40454b;
     margin-bottom: 2.7rem;
     font-weight: 550;
@@ -322,7 +330,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: -8rem;
 }
 
 .counter {
@@ -408,21 +416,19 @@
     height: 8rem;
 }
 
-/* Imagine decor dreapta susțin lângă Titlu */
 .decor1-img {
     position: absolute;
     right: -0rem;
-    width: clamp(6rem, 30vw, 36rem);
+    width: clamp(6rem, 30vw, 34rem);
     pointer-events: none;
     user-select: none;
 }
-
 
 .decor2-img {
     position: absolute;
     left: 0rem;
     top: 5rem;
-    width: clamp(6rem, 30vw,36rem);
+    width: clamp(6rem, 26vw,32rem);
     height: auto;
     pointer-events: none;
     user-select: none;
@@ -437,7 +443,30 @@
 .decor3-img {
   position:relative;
   top: -8.3rem;
- width: clamp(13rem, 25vw, 34rem);
+  left: 2rem;
+ width: clamp(13rem, 30vw, 34rem);
+  z-index: 0; 
+  pointer-events: none;
+  user-select: none;
+  margin-bottom: -4rem;
+}
+
+.decor4-img {
+  position:relative;
+  margin-right: 6vw;
+  right: 2rem;
+  top: -3.3rem;
+  width: clamp(9rem, 24vw, 24rem);
+margin-bottom: -4rem;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.decor5-img {
+  position:relative;
+  top: -8.3rem;
+ width: clamp(13rem, 25vw, 27rem);
    
   z-index: 0;
   
@@ -445,13 +474,493 @@
   user-select: none;
 }
 
-.decor4-img {
+.decor6-img {
   position:relative;
-  margin-right: 6vw;
-  top: -3.3rem;
-  width: clamp(9rem, 19vw, 34rem);
-margin-bottom: -2rem;
+  margin-right: 10.5rem;
+  top: 0rem;
+  width: clamp(9rem, 19vw, 18rem);
   z-index: 0;
   pointer-events: none;
   user-select: none;
+}
+
+.decor7-img {
+ position:relative;
+  top: -1.3rem;
+  margin-bottom: -15rem;
+ width: clamp(13rem, 25vw, 18rem);
+ height: clamp(13rem, 30vw, 37rem);
+left: 2rem; 
+  z-index: 0;
+  
+  pointer-events: none;
+  user-select: none;
+}
+
+.flex-right{
+    display: flex;
+  justify-content: flex-end;
+}
+
+.flex-start{
+    display: flex;
+  justify-content: flex-start;
+} 
+
+@media (max-width:1500px){
+.hide-mobile {
+  display: block;
+}
+
+  .decor1-img,
+    .decor2-img,
+  .decor3-img,
+  .decor4-img,
+  .decor5-img,
+  .decor6-img,
+  .decor7-img {
+    display: none;
+}
+}
+
+@media (max-width: 1500px) and (min-width: 601px){
+  
+.Technology {
+
+    margin-bottom: 4rem;
+
+}
+}
+
+/* MOBIL */
+@media (max-width: 600px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  .bodyPrezentare {
+    margin-left: -0.5rem;
+     margin-right: -0.5rem;
+    font-size: 0.97rem;
+    padding: 0rem;
+  }
+ 
+  .Titlu {
+    font-size: 1.6rem;
+    margin-top: 3.5rem;
+    margin-bottom: 1.3rem;
+    line-height: 1.2;
+    max-width: 87vw;
+    padding: 0 0.7rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Paragraf1 {
+    font-size: 0.9rem;
+    max-width: 80vw;
+    margin-bottom: 3.3rem;
+    line-height: 1.35;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0.4rem;
+  }
+
+  .GetStarted {
+    font-size: 0.95rem;
+    padding: 0.35rem 0.6rem;
+    margin-bottom: 1.4rem;
+    border-width: 0.13rem;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.13);
+  }
+
+  .nav-buttons {
+    gap: 0.5rem;
+    margin-bottom: 4rem;
+    padding: 0 0.4rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-buttons button, .scroll-btn {
+    width: 86vw;
+    max-width: 100%;
+    font-size: 0.8rem;
+    padding: 8px 0;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 23rem;
+  }
+
+  .flex-container-T1-1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    animation-delay: 1.2s; /* întârzie animația doar pe mobil */
+  }
+
+  .flex-container-T1-2 {
+    gap: 1.2rem;
+    margin-bottom: 0rem;
+  }
+
+  .Titlu1 {
+    font-size: 2.7rem;
+    margin-left: 0.5rem;
+    max-width: 87vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flex-item-T1 {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.5rem 0rem 0rem;
+    max-width: 99vw;
+    min-height: 2.5rem;
+    border-radius: 1.2rem;
+    margin-right: 0;
+  }
+  .flex-item-T1 .icon {
+    font-size: 1.8rem;
+    margin-right: 0.7rem;
+    margin-left: 0.2rem;
+    margin-top: 2.1rem;
+  }
+  .flex-item-T1 .extra-details,
+  .flex-item-T1 .extra-details.show {
+    font-size: 0.93rem;
+    padding: 0.5rem 0.7rem;
+    max-width: 99vw;
+  }
+
+  .flex-item-T1 .arrow-btn {
+    font-size: 1rem;
+    margin: 0rem 0 0 0;
+  }
+
+  .StrongPoints {
+    font-size: 1.1rem;
+    margin-bottom: 2.3rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .StrongPoints {
+    font-size: 2.4rem;
+    font-weight: 700;   
+}
+
+.flex-container-SP {
+    gap: 1.2rem;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.flex-item-SP {
+    font-size: 0.8rem;
+    width: 9rem;
+    height: 9rem;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.flex-item-SP .icon {
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+    color: #ffd273;
+}
+  
+  .Technology .title {
+    font-size: 1.6rem;
+    margin-bottom: 0rem;
+    padding: 0 0.4rem;
+    text-align: center;
+    max-width: 87vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Technology .text {
+    font-size: 0.95rem;
+    max-width: 80vw;
+    margin-bottom: 11rem;
+    padding: 0 0.2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-container-c {
+    gap: 1rem;
+    margin-bottom: -12rem;
+    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .counter {
+    width: 70vw;
+    line-height: 3.1rem;
+    height: auto;
+    font-size: 1.65rem;
+    border-radius: 1.2rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .counter-counter {
+    font-size: 3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .AboutUs {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+  .AboutUs .title {
+    
+    font-size: 2rem;
+    background-size: 13rem 10rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6rem;
+    margin-bottom: -6rem;
+  }
+  .AboutUs .text {
+    font-size: 0.95rem;
+    max-width: 87vw;
+    padding: 0 0.4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .brands {
+    gap: 2.5rem;
+    max-width: 87vw;
+    margin-bottom: 2rem;
+  }
+  .Kaufland {
+    height: 5.5rem;
+    
+}
+
+.Auchan {
+    height: 4rem;
+}
+
+.Penny {
+    height: 4rem;
+}
+  
+}
+
+/* TABLETĂ */
+@media (max-width: 1024px) and (min-width: 601px) {
+  
+  .Titlu {
+    margin-top: 9rem;
+    font-size: 2rem;
+    max-width: 85vw;
+    
+  }
+  .Paragraf1 {
+    font-size: 1.1rem;
+    max-width: 55vw;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+  .GetStarted {
+    font-size: 1rem;
+    padding: 0.4rem 0.7rem;
+    margin-bottom: 2rem;
+    border-width: 0.15rem;
+  }
+  .nav-buttons {
+    gap: 0.8rem;
+    margin-bottom: 8rem;
+    padding: 0 0.7rem;
+  }
+  .nav-buttons button, .scroll-btn {
+    width: 39vw;
+    max-width: 100%;
+    font-size: 0.95rem;
+    padding: 10px 0;
+    border-radius: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 28rem;
+  }
+  .flex-container-T1-1 {
+    gap: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .flex-container-T1-2 {
+    gap: 2rem;
+    margin-bottom: 0rem;
+  }
+  .Titlu1 {
+    font-size: 4rem;
+    margin-left: 1rem;
+    max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flex-item-T1 {
+    font-size: 1rem;
+    padding: 1rem 0.7rem 0.3rem 0.5rem;
+    max-width: 95vw;
+    min-height: 3rem;
+    border-radius: 2rem;
+    margin-right: 0;
+  }
+  .flex-item-T1 .icon {
+    font-size: 1.5rem;
+    margin-right: 0.7rem;
+    margin-left: 0.2rem;
+    margin-top: 1.2rem;
+  }
+  .flex-item-T1 .extra-details,
+  .flex-item-T1 .extra-details.show {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    max-width: 95vw;
+  }
+  .flex-item-T1 .arrow-btn {
+    font-size: 1.2rem;
+    margin: 0rem 0 0 0;
+  }
+  .StrongPoints {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flex-container-SP {
+    gap: 1.5rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flex-item-SP {
+    font-size: 1rem;
+    width: 9rem;
+    height: 11rem;
+    padding: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+  .flex-item-SP .icon {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    color: #ffd273;
+  }
+  .Technology .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0 0.7rem;
+    text-align: center;
+    max-width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Technology .text {
+    font-size: 1rem;
+    max-width: 70vw;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flex-container-c {
+    gap: 1.5rem;
+    margin-bottom: -9rem;
+    align-items: center;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .counter {
+    width: 28rem;
+    line-height: 3.7rem;
+    height: 21rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .counter-counter {
+    font-size: 2.2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  .AboutUs {
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-right: 0;
+    margin-bottom: 0;
+    margin-top: -3rem;
+  }
+  .AboutUs .title {
+    font-size: 2.5rem;
+    padding: 5rem;
+    background-size: 17rem 13rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .AboutUs .text {
+    font-size: 1rem;
+    max-width: 90vw;
+    padding: 0 0.7rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .brands {
+    gap: 2rem;
+    max-width: 90vw;
+    margin-bottom: 2rem;
+  }
+  .Kaufland {
+    height: 6rem;
+  }
+  .Auchan {
+    height: 5rem;
+  }
+  .Penny {
+    height: 5rem;
+  }
+ 
+  
 }

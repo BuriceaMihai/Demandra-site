@@ -62,7 +62,7 @@ const ApexChart = () => {
         {
           breakpoint: 900,
           options: {
-            chart: { height: 420, width: "170%" },
+            chart: { height: 420, width: "100%" },
             title: { style: { fontSize: "27px" } },
             xaxis: { labels: { style: { fontSize: "20px" } } },
             yaxis: {
@@ -76,7 +76,7 @@ const ApexChart = () => {
         {
           breakpoint: 600,
           options: {
-            chart: { height: 320, width: "140%" },
+            chart: { height: 260, width: "100%" },
             title: { style: { fontSize: "20px" } },
             xaxis: { labels: { style: { fontSize: "14px" } } },
             yaxis: {
@@ -92,13 +92,20 @@ const ApexChart = () => {
   });
 
   return (
-    <div id="chart" style={{ width: "100%", maxWidth: 530, margin: "0 auto" }}>
+    <div
+      className="chart"
+      style={{
+        maxWidth: 600,
+        margin: "0 auto",
+        aspectRatio: "1 / 1", // menține proporția pe orice device
+        minHeight: 100,
+      }}
+    >
       <ReactApexChart
         options={state.options}
         series={state.series}
         type="line"
-        height={500}
-        width="200%"
+        height="100%"
       />
     </div>
   );

@@ -4,37 +4,175 @@
     justify-content: space-between;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     flex: 1;
+    position: relative;
+    overflow-x: hidden;
+     margin-left: -0.5rem;
+     margin-right: -0.5rem;
+  padding: 0rem;
 }
 
-.textContainer {
-    margin-left: 10rem;
+.titleContainer {
+    justify-content: center;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 11rem;
+    margin-bottom: -3rem;
+    background: linear-gradient(to bottom, #7b439c, #a377cf);
+    background-size: 100% 100%;
+    animation: gradientShift 4s ease-in-out infinite;
+    margin-top: 1rem;
+
 }
 
 .titleContact {
     max-width: 800rem;
-    font-size: 2.67rem;
+    font-size: 3.67rem;
     font-weight: 700;
-    color: #253e92;
-    margin-bottom: 5rem;
-    margin-top: 4rem;
-    margin-left: 0.7rem;
+    color: #ffffff;
+}
 
+.subtitleContact {
+    font-size: 1.25rem;
+    color: #f3eaff;
+    margin-top: 0.5rem;
+    margin-bottom: -6rem;
+    font-weight: 400;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.textContainer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 10vw;
+    max-width: 100%;
+    margin-bottom: 3rem;
+   
 }
 
 .infoContainer {
-    font-size: 1.8rem;
-    box-sizing: border-box;
-    width: 15.7em;
-    height: 22rem;
-    padding: 3rem;
-    color: #001761;
-    border-radius: 0.9rem;
-    border: 0.3rem solid #7b439c;
+    font-size: 1.5rem;
+    
+    width: 28rem;
+    max-height: 28rem;
+    padding: 2rem 2.5rem;
+    color: #253e92;
+    border-radius: 1rem;
+    border: 1.5px solid #7b439c;
+    background: #faf8ff;
+    box-shadow: 0 4px 24px rgba(123,67,156,0.07);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 10rem;
-    margin-left: 0.5rem;
+    gap: 1.2rem;
+    
+}
+
+.directContact {
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 24px rgba(123,67,156,0.07);
+}
 
 
+.contact-form {
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    border: 1.5px solid #7b439c;
+    border-radius: 1rem;
+    background: #faf8ff;
+    box-shadow: 0 2px 12px rgba(123,67,156,0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #253e92;
+    margin-bottom: 0.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+    background: #7b439c;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background: #533987;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .titleContact {
+        font-size: 2.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .subtitleContact {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: -3rem;
+        max-width: 95vw;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .titleContainer {
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+        margin-bottom: -2rem;
+    }
+    .textContainer {
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 98vw;
+        margin-bottom: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .infoContainer, .directContact {
+        width: 100%;
+        max-width: 98vw;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .contact-form {
+        padding: 1rem;
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .bodyContact {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

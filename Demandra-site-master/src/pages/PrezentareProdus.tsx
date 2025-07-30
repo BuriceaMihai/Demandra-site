@@ -44,7 +44,7 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
   } = content;
 
   const buttons = [
-    { label: skipBtnWhatWeSolve, onClick: () => scrollTo(refTheProblem) },
+    { label: skipBtnWhatWeSolve, onClick: () => scrollTo(refTheProblem), className: "hide-mobile" },
     { label: skipBtnWhyUs, onClick: () => scrollTo(refWhyUs) },
     { label: skipBtnTechnology, onClick: () => scrollTo(refTechnology) },
     { label: skipBtnAboutUs, onClick: () => scrollTo(refAboutUs) },
@@ -62,7 +62,10 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
   // State pentru elementul extins
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  return (
+  // Detectează dacă este mobil
+  const isMobile = window.matchMedia("(max-width: 600px)").matches;
+
+ return (
     <div className="bodyPrezentare">
       
       
@@ -80,7 +83,7 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
 
           </motion.div>
 
-      
+     <div className="center">
       <div className="Titlu">
         {mainTitleWords.map((el, i) => (
           <motion.span
@@ -96,7 +99,7 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
           </motion.span>
         ))}
       </div>
-
+     
       <div className="Paragraf1">
         {mainParagraphWords.map((el, i) => (
           <motion.span
@@ -112,7 +115,8 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
           </motion.span>
         ))}
       </div>
-
+     </div>
+     
        <motion.div
             className="decor2-img"
             initial={{ opacity: 0, y: 0, x: -70 }}
@@ -147,7 +151,9 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.7 + i * 0.2, duration: 0.4 }}
           >
-            <ScrollButton label={btn.label} onClick={btn.onClick} />
+            <div className={btn.className || ""}>
+              <ScrollButton label={btn.label} onClick={btn.onClick} />
+            </div>
           </motion.div>
         ))}
       </div>
@@ -165,7 +171,10 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0 }}
+          transition={{
+            duration: 0.5,
+            delay: isMobile ? (mainTitleWords.length / 7 + 0.5) : 0 // delay după titlu pe mobil
+          }}
         >
           <motion.div
             initial={{ opacity: 0, y: 200 }}
@@ -231,7 +240,8 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
       >
         <h1 className="StrongPoints">{strongPointsTitle}</h1>
       </motion.div>
-
+    
+     <div className="center">
       <div className="space-between">
         
         <motion.div
@@ -285,14 +295,16 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
           </motion.div>
 
       </div>
+    </div>
 
       <div ref={refTechnology}>
         <p>
-          <br /> <br /> <br />
+          <br /> <br /> <br /> <br /> <br /> <br /> <br />
         </p>
       
-
+      
         <div className="Technology">
+          <div className="center">
           <motion.div
             className="title"
             initial={{ opacity: 0, y: 20 }}
@@ -305,9 +317,24 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
           >
             {Technology.title}
           </motion.div>
+      </div>
 
+     <div className="space-between">
 
-
+      <motion.div
+            className="decor6-img"
+            initial={{ opacity: 0, y: 0, x: -70 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              y: 0,
+              transition: { duration: 0.7, delay: 0.15},
+            }}
+            viewport={{ once: true }}
+          >
+           <img src="/decor6.png" alt="" className="decor6-img" draggable={false} />
+       </motion.div>
+       
           <motion.div
             className="text"
             initial={{ opacity: 0, y: 20 }}
@@ -320,8 +347,25 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
           >
             {Technology.text}
           </motion.div>
-        </div>
 
+          <motion.div
+            className="decor5-img"
+            initial={{ opacity: 0, y: 0, x: 70 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              y: 0,
+              transition: { delay: 0.15, duration: 0.7},
+            }}
+            viewport={{ once: true }}
+          >
+            
+           <img src="/decor5.png" alt="" className="decor5-img" draggable={false} />
+          </motion.div>
+        </div>
+      </div>
+      
+      <div>
         <motion.div
           className="flex-container-c"
           initial={{ opacity: 0, y: 20 }}
@@ -345,11 +389,29 @@ function PrezentareProdus({ content }: PrezentareProdusProps) {
             <ApexChart />
           </div>
         </motion.div>
-      </div>
+       </div>
+    </div>
+
+    <div className="flex-right">
+    <motion.div
+            className="decor7-img"
+            initial={{ opacity: 0, y: 0, x: 70 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              y: 0,
+              transition: { delay: 0.15, duration: 0.7},
+            }}
+            viewport={{ once: true }}
+          >
+            
+           <img src="/decor7.png" alt="" className="decor7-img" draggable={false} />
+          </motion.div>
 
       <p ref={refAboutUs}>
         <br /> <br /> <br />
       </p>
+    </div>
 
       <motion.div
         className="AboutUs"

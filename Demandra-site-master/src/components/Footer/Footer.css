@@ -52,8 +52,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 0.3rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
+     margin-top: 0rem;
+    margin-bottom: 3rem;
     margin-right: 1rem
 }
 
@@ -66,4 +66,28 @@
 
 .footer-social-icon:hover {
     text-decoration: underline;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 1rem;
+        font-size: 0.1rem;
+    }
+
+    .header {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+    .footer-link {
+        font-size: 0.9rem;
+    }
+
+    .footer-social-icon {
+        height: 2.5rem;
+    }
 }

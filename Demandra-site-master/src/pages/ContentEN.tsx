@@ -2,12 +2,12 @@ import { FaBrain, FaMoneyBillWave, FaClock, FaPlug } from "react-icons/fa";
 import { FaArrowUpRightDots, FaMoneyBill1, FaCoins } from "react-icons/fa6";
 
 export const mainTitleWords =
-  "With Demandra, retailers don’t just get data, <br> they get clarity".split(
+  "With Demandra, retailers don’t just get data, they get clarity".split(
     " "
   );
 
 export const mainParagraphWords =
-  "Demandra is a demand forecasting platform powered by AI that helps <br> retailers optimize inventory by solving the root of both overstocking <br> and understocking: inaccurate demand prediction.".split(
+  "Demandra is a demand forecasting platform powered by AI that helps retailers optimize inventory by solving the root of both overstocking and understocking: inaccurate demand prediction.".split(
     " "
   );
 
@@ -108,12 +108,7 @@ export const Technology = {
   title: "Technology that predicts demand — not just reacts to it",
   text: (
     <>
-      Demandra leverages advanced AI to analyze historical sales data, seasonal
-      trends, and real-time consumer behavior. Our intelligent forecasting
-      engine identifies patterns and shifts before they happen, enabling
-      retailers to make proactive decisions. By learning from past trends,
-      Demandra helps you stock smarter, reduce waste, and stay ahead of customer
-      demand.
+      Demandra leverages advanced AI to analyze historical sales data, seasonal trends, and real-time consumer behavior. Our intelligent forecasting engine identifies patterns and shifts before they happen, enabling retailers to make proactive decisions. By learning from past trends, Demandra helps you stock smarter, reduce waste, and stay ahead of customer demand.
     </>
   ),
 };
